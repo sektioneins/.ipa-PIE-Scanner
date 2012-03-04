@@ -30,7 +30,7 @@ def doit(basedir):
 
         if "CFBundleDisplayName" in plist:
             appname = plist["CFBundleDisplayName"]
-        elif "CFBundleDisplayName" in plist:
+        elif "CFBundleName" in plist:
             appname = plist["CFBundleName"]
         else:
             appname = plist["CFBundleIdentifier"]
